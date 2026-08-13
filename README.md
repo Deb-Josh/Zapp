@@ -48,5 +48,10 @@
 
 ## Page des outils (Tools)
 <p align="center">
+<<<<<<< HEAD
     <img src="./assets/screenshots/tools.PNG" alt="screenshot de la page des outils">
 </p>
+=======
+    <img src="./assets/screenshots/tools.png" alt="screenshot de la page des outils">
+</p>
+>>>>>>> bf1e27582f7e5ae96e370ff1c33b2186f04136b5
