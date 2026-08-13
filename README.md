@@ -1,18 +1,4 @@
-<style>
-    .zapp{
-        color: #32D951;
-    }
-
-    .splashs{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-</style>
-
-# <span class="zapp">Zapp</span> - le meilleur clone partiel(pour l'instant) de WhatsApp
+# <span style="color: #32D951">Zapp</span> - le meilleur clone partiel(pour l'instant) de WhatsApp
 
 <p align="center">
     <img src="assets/icons/Zapp.png" alt="Logo de l'application zapp">
@@ -38,12 +24,13 @@
 - ***provider***: pour fournir le theme globale à l'app (`flutter pub add provider`)
 - ***flutter_native_splash***: gestion du splash screen natif (`flutter pub add flutter_native_splash`)
 
-# Screenshots de l'application <span class="zapp">Zapp</span>
+# Screenshots de l'application <span style="color: #32D951">Zapp</span>
 ## Splash screens
-<div class="splashs">
+<p align="center">
     <img src="assets/screenshots/splash-screen-light.png" alt="splash screen en light mode">
+    <span width="20px">
     <img src="assets/screenshots/splash-screen-dark.png" alt="splash screen en dark mode">
-</div>
+</p>
 
 ## Page des discussions (Chats)
 <p align="center">
