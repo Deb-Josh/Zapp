@@ -1,4 +1,4 @@
-# <span style="color: #32D951">Zapp</span> - le meilleur clone partiel(pour l'instant) de WhatsApp
+# <i style="color: #32D951">Zapp</i> - le meilleur clone partiel(pour l'instant) de WhatsApp
 
 <p align="center">
     <img src="assets/icons/Zapp.png" alt="Logo de l'application zapp">
@@ -20,34 +20,33 @@
 - Implémentation des interface Inbox des discussions
 
 # Les dépendances utilisés
-- ***go_router***: pour la gestion de la navigation et du routing (`flutter pud add go_router`)
+- ***go_router***: pour la gestion de la navigation et du routing (`flutter pub add go_router`)
 - ***provider***: pour fournir le theme globale à l'app (`flutter pub add provider`)
 - ***flutter_native_splash***: gestion du splash screen natif (`flutter pub add flutter_native_splash`)
 
-# Screenshots de l'application <span style="color: #32D951">Zapp</span>
+# Screenshots de l'application <i style="color: #32D951">Zapp</i>
 ## Splash screens
 <p align="center">
-    <img src="assets/screenshots/splash-screen-light.png" alt="splash screen en light mode">
-    <span width="20px">
-    <img src="assets/screenshots/splash-screen-dark.png" alt="splash screen en dark mode">
+    <img src="./assets/screenshots/splash-screen-light.png" alt="splash screen en light mode">
+    <img src="./assets/screenshots/splash-screen-dark.png" alt="splash screen en dark mode">
 </p>
 
 ## Page des discussions (Chats)
 <p align="center">
-    <img src="assets/screenshots/chats.png" alt="screenshot de la page des discussions">
+    <img src="./assets/screenshots/chats.png" alt="screenshot de la page des discussions">
 </p>
 
 ## Page des appels (Calls)
 <p align="center">
-    <img src="assets/screenshots/calls.png" alt="screenshot de la page des appels">
+    <img src="./assets/screenshots/calls.png" alt="screenshot de la page des appels">
 </p>
 
 ## Page des actus (Updates)
 <p align="center">
-    <img src="assets/screenshots/updates.png" alt="screenshot de la page des actus">
+    <img src="./assets/screenshots/updates.png" alt="screenshot de la page des actus">
 </p>
 
 ## Page des outils (Tools)
 <p align="center">
-    <img src="assets/screenshots/tools.png" alt="screenshot de la page des outils">
+    <img src="./assets/screenshots/tools.png" alt="screenshot de la page des outils">
 </p>
