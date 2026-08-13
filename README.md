@@ -27,26 +27,26 @@
 # Screenshots de l'application <i style="color: #32D951">Zapp</i>
 ## Splash screens
 <p align="center">
-    <img src="./assets/screenshots/splash-screen-light.png" alt="splash screen en light mode">
-    <img src="./assets/screenshots/splash-screen-dark.png" alt="splash screen en dark mode">
+    <img src="./assets/screenshots/splash-screen-light.PNG" alt="splash screen en light mode">
+    <img src="./assets/screenshots/splash-screen-dark.PNG" alt="splash screen en dark mode">
 </p>
 
 ## Page des discussions (Chats)
 <p align="center">
-    <img src="./assets/screenshots/chats.png" alt="screenshot de la page des discussions">
+    <img src="./assets/screenshots/chats.PNG" alt="screenshot de la page des discussions">
 </p>
 
 ## Page des appels (Calls)
 <p align="center">
-    <img src="./assets/screenshots/calls.png" alt="screenshot de la page des appels">
+    <img src="./assets/screenshots/calls.PNG" alt="screenshot de la page des appels">
 </p>
 
 ## Page des actus (Updates)
 <p align="center">
-    <img src="./assets/screenshots/updates.png" alt="screenshot de la page des actus">
+    <img src="./assets/screenshots/updates.PNG" alt="screenshot de la page des actus">
 </p>
 
 ## Page des outils (Tools)
 <p align="center">
-    <img src="./assets/screenshots/tools.png" alt="screenshot de la page des outils">
+    <img src="./assets/screenshots/tools.PNG" alt="screenshot de la page des outils">
 </p>
