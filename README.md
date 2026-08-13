@@ -28,7 +28,7 @@
 ## Splash screens
 <p align="center">
     <img src="./assets/screenshots/splash-screen-light.png" alt="splash screen en light mode">
-    <img src="./assets/screenshots/splash-screen-dark.png" alt="splash screen en dark mode">
+    <img src="assets/screenshots/splash-screen-dark.PNG" alt="splash screen en dark mode">
 </p>
 
 ## Page des discussions (Chats)
