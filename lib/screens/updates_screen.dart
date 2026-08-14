@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zapp/themes/theme_controller.dart';
 import 'package:zapp/widgets/nav_bar_custom.dart';
 
 class UpdatesScreen extends StatefulWidget {
@@ -12,14 +13,20 @@ class _UpdatesScreenState extends State<UpdatesScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: ThemeController.bgColor,
       appBar: AppBar(
+        backgroundColor: ThemeController.bgColor,
         title: Text(
           "Actus",
-          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)
+          style: TextStyle(
+            color: ThemeController.textColor,
+            fontSize: 18,
+            fontWeight: FontWeight.bold,
+          )
         ),
         actions: [
-          IconButton(onPressed: (){}, icon: Icon(Icons.search)),
-          IconButton(onPressed: (){}, icon: Icon(Icons.more_vert_outlined))
+          IconButton(onPressed: (){}, icon: Icon(Icons.search, color: ThemeController.iconColor,)),
+          IconButton(onPressed: (){}, icon: Icon(Icons.more_vert_outlined, color: ThemeController.iconColor,))
         ],
       ),
 
@@ -29,14 +36,15 @@ class _UpdatesScreenState extends State<UpdatesScreen> {
         children: [
           FloatingActionButton(
             onPressed: (){},
+            backgroundColor: ThemeController.bg2Color,
             mini: true,
-            child: Icon(Icons.edit, color: Colors.blueGrey),
+            child: Icon(Icons.edit, color: ThemeController.iconColor),
           ),
           FloatingActionButton(
             onPressed: (){},
-            backgroundColor: Colors.green,
+            backgroundColor: ThemeController.mainColor,
             tooltip: "Nouveau statut",
-            child: Icon(Icons.photo_camera_rounded, color: Colors.white),
+            child: Icon(Icons.photo_camera_rounded, color: ThemeController.bgColor),
           ),
         ],
       ),
@@ -46,8 +54,8 @@ class _UpdatesScreenState extends State<UpdatesScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           spacing: 6,
           children: [
-            Icon(Icons.campaign_rounded, size: 72, color: Colors.green,),
-            Text("Page en construction...")
+            Icon(Icons.campaign_rounded, size: 72, color: ThemeController.mainColor),
+            Text("Page en construction...", style: TextStyle(color: ThemeController.textColor))
           ],
         ),
       ),

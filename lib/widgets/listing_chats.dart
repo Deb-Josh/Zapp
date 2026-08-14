@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zapp/models/chat.dart';
+import 'package:zapp/themes/theme_controller.dart';
 
 class ListingChats extends StatefulWidget {
   const ListingChats({super.key});
@@ -68,14 +69,18 @@ class _ListingChatsState extends State<ListingChats> {
                               chat.name,
                               overflow: TextOverflow.ellipsis,
                               maxLines: 1,
-                              style: TextStyle(fontWeight: FontWeight.bold),
+                              style: TextStyle(
+                                color: ThemeController.textColor,
+                                fontWeight: FontWeight.w600,
+                                letterSpacing: 1,
+                              ),
                             ),
                           ),
                           // Heure du dernier message
                           Text(
                             chat.timeLastMessage,
                             style: TextStyle(
-                              color: Colors.green,
+                              color: ThemeController.mainColor,
                               fontSize: 10,
                               fontWeight: FontWeight.bold
                             )
@@ -91,6 +96,10 @@ class _ListingChatsState extends State<ListingChats> {
                               chat.lastMessage,
                               overflow: TextOverflow.ellipsis,
                               maxLines: 1,
+                              style: TextStyle(
+                                color: ThemeController.greyColor,
+                                fontSize: 12,
+                              ),
                             ),
                           ),
                           // nombre de messages non lus
@@ -101,7 +110,7 @@ class _ListingChatsState extends State<ListingChats> {
                             height: 18,
                             padding: EdgeInsets.symmetric(horizontal: 5),
                             decoration: BoxDecoration(
-                              color: Colors.green,
+                              color: ThemeController.mainColor,
                               borderRadius: BorderRadius.circular(100)
                             ),
                             child: Center(
@@ -109,7 +118,7 @@ class _ListingChatsState extends State<ListingChats> {
                                 "${chat.notReadMessage}",
                                 textAlign: TextAlign.center,
                                 style: TextStyle(
-                                  color: Colors.white,
+                                  color: ThemeController.text2Color,
                                   fontSize: 10,
                                   fontWeight: FontWeight.bold
                                 )

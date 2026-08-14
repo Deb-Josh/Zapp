@@ -5,11 +5,11 @@
 </p>
 
 # Les fonctionnalités implémentées
-- Splash screen natif s'adaptant aux thème (clair/sombre)
+- Splash screen natif s'adaptant aux thèmes(clair/sombre)
+- Le changement de thème de l'application (light/dark)
 - Listing des discussions
 - Gestion dynamique des photos de profil des discussion en fonction de leur type (personne/groupe/communauté)
 - La navigation entre les pages est effective
-- Le changement de thème de l'application (light/dark)
 
 # Les fonctionnalités à venir
 - Splash screen animé avec le logo de WhatsApp faisant la transition avec celui de Zapp
@@ -18,6 +18,7 @@
 - Filtrage des discussions selon leur état (toutes/non lues/groupes/communauté)
 - Ajout de nouvelles discussions via le bouton(FloatingActionButton) se traouvant au chats_screen
 - Implémentation des interface Inbox des discussions
+- Full responsive design avec des layaout différents sur tablet et desktop
 
 # Les dépendances utilisés
 - ***go_router***: pour la gestion de la navigation et du routing (`flutter pub add go_router`)
@@ -34,6 +35,7 @@
 ## Page des discussions (Chats)
 <p align="center">
     <img src="./assets/screenshots/chats.PNG" alt="screenshot de la page des discussions">
+    <img src="./assets/screenshots/chats-dark.PNG" alt="screenshot de la page des discussions en mode sombre">
 </p>
 
 ## Page des appels (Calls)

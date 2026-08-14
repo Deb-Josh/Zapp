@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:zapp/models/theme_controller.dart';
+import 'package:zapp/themes/theme_controller.dart';
 
 class MoreButton extends StatelessWidget {
   const MoreButton({super.key});
@@ -9,14 +9,15 @@ class MoreButton extends StatelessWidget {
     return ValueListenableBuilder(
       valueListenable: themeController.themeMode,
       builder: (context, themeMode, child) {
+        final isDark = themeController.isDark;
         
         return PopupMenuButton<int>(
-          icon: const Icon(Icons.more_vert_outlined),
+          icon: Icon(Icons.more_vert_outlined, color: ThemeController.iconColor),
           tooltip: "Plus d'options",
-          color: Colors.white,
+          color: ThemeController.bgColor,
 
           position: PopupMenuPosition.over,
-          offset: const Offset(0, 48),
+          offset: const Offset(0, 45),
         
           onSelected: (value){
             if(value == 0){
@@ -31,10 +32,12 @@ class MoreButton extends StatelessWidget {
                 spacing: 10,
                 children: [
                   Icon(
-                    themeController.isDark ? Icons.light_mode : Icons.dark_mode,
+                    isDark ? Icons.light_mode : Icons.dark_mode,
+                    color: ThemeController.iconColor,
                   ),
                   Text(
-                    "Passer au thème ${themeController.isDark ? 'clair' : 'sombre'}",
+                    "Passer au thème ${isDark ? 'clair' : 'sombre'}",
+                    style: TextStyle(color: ThemeController.textColor),
                   ),
                 ]
               ),

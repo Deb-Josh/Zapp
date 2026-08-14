@@ -28,7 +28,7 @@ class Chat {
   profilePicture = 
     (profilePicture == null) ?
     (chatType == ChatWith.person) ?
-    name.substring(0, 1) :
+    name.substring(0, 1).toUpperCase() :
     (chatType == ChatWith.group) ?
     Icons.group :
     Icons.groups :

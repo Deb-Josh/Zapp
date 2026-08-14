@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
-import 'package:zapp/models/theme_controller.dart';
+import 'package:zapp/themes/theme_controller.dart';
 import 'package:zapp/routes/app_router.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 
@@ -25,6 +25,12 @@ class Zapp extends StatelessWidget {
       builder: (context, themeMode, child) {
         return MaterialApp.router(
           title: "Zapp",
+          
+          // J'ai geré les couleurs des differents themes avec des variables statiques en attendant de creer mes propres ThemeData personnalisés
+          // theme: ThemeData.light(),
+          // darkTheme: ThemeData.dark(),
+
+          themeMode: themeMode,
           debugShowCheckedModeBanner: false,
           routerConfig: appRouter,
         );

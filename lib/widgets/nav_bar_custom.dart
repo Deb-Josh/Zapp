@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:zapp/themes/theme_controller.dart';
 
 class NavBarCustom extends StatelessWidget {
   const NavBarCustom({super.key, required this.selectedIndex});
@@ -24,22 +25,22 @@ class NavBarCustom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return NavigationBar(
-      elevation: 3,
-      shadowColor: Colors.black,
-      backgroundColor: Colors.white,
-      indicatorColor: Colors.green[100]!,
+      elevation: 10,
+      shadowColor: ThemeController.iconColor,
+      backgroundColor: ThemeController.bgColor,
+      indicatorColor: ThemeController.accentMainColor,
 
       // Style des labels à l'etat sélectionné et non sélectionné
       labelTextStyle: WidgetStateTextStyle.resolveWith((state){
         if(state.contains(WidgetState.selected)){
           return TextStyle(
-            color: Colors.black,
+            color: ThemeController.textColor,
             fontSize: 12,
             fontWeight: FontWeight.bold,
           );
         }
         return TextStyle(
-          color: Colors.black,
+          color: ThemeController.textColor,
           fontSize: 12,
         );
       }),
@@ -51,29 +52,29 @@ class NavBarCustom extends StatelessWidget {
       destinations: [
         // to ChatsScreen
         NavigationDestination(
-          icon: Icon(Icons.chat_outlined, color: Colors.black,),
-          selectedIcon: Icon(Icons.chat, color: Colors.green),
+          icon: Icon(Icons.chat_outlined, color: ThemeController.iconColor),
+          selectedIcon: Icon(Icons.chat, color: ThemeController.mainColor),
           label: "Discussions",
         ),
 
         // to CallsScreen
         NavigationDestination(
-          icon: Icon(Icons.call_outlined, color: Colors.black,),
-          selectedIcon: Icon(Icons.call, color: Colors.green),
+          icon: Icon(Icons.call_outlined, color: ThemeController.iconColor),
+          selectedIcon: Icon(Icons.call, color: ThemeController.mainColor),
           label: "Appels",
         ),
 
         // to UpdatesScreen
         NavigationDestination(
-          icon: Icon(Icons.campaign_outlined, color: Colors.black,),
-          selectedIcon: Icon(Icons.campaign, color: Colors.green),
+          icon: Icon(Icons.campaign_outlined, color: ThemeController.iconColor),
+          selectedIcon: Icon(Icons.campaign, color: ThemeController.mainColor),
           label: "Actus",
         ),
 
         // to ToolsScreen
         NavigationDestination(
-          icon: Icon(Icons.store_outlined, color: Colors.black,),
-          selectedIcon: Icon(Icons.store, color: Colors.green),
+          icon: Icon(Icons.store_outlined, color: ThemeController.iconColor),
+          selectedIcon: Icon(Icons.store, color: ThemeController.mainColor),
           label: "Outils",
         ),
       ],
